@@ -5,10 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    // Сейчас сайт открывается по адресу rewainn.github.io/violettapages/
-    // (без своего домена), поэтому base должен совпадать с именем репозитория.
-    // Когда подключите кастомный домен — поменяйте обратно на base: '/'.
-    base: '/violettapages/',
+    base: '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
