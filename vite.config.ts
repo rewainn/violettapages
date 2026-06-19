@@ -5,12 +5,10 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    // Корневой путь '/' — используем, потому что сайт будет открываться
-    // по кастомному домену (yourdomain.com/), а не по адресу вида
-    // username.github.io/repo-name/. Если решите отказаться от своего
-    // домена и оставить только адрес rewainn.github.io/violettaproject/ —
-    // поменяйте на base: '/violettaproject/'.
-    base: '/',
+    // Сейчас сайт открывается по адресу rewainn.github.io/violettapages/
+    // (без своего домена), поэтому base должен совпадать с именем репозитория.
+    // Когда подключите кастомный домен — поменяйте обратно на base: '/'.
+    base: '/violettapages/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
